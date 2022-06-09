@@ -121,8 +121,8 @@ text-shadow: 2px 2px  magenta;
 
     .input{
         width: 105px;
-        height: 40px;
-        font-size: 30px;
+        height: 60px;
+        font-size: 40px;
         }
     .check, .restart{
         width: 100px;
