@@ -40,14 +40,14 @@ body{
 
 h1{
    width: 47%;
-   line-height: 80px;
+   line-height: 70px;
    background-color: rgba(47, 79, 79, 0.3); 
    text-align: center;
-   margin: 166px 0 20px;
+   margin: 150px 0 20px;
    border-radius:50px;
    font-family: 'Rajdhani', sans-serif;
    font-size: 5rem;
-   font-weight: 1000;
+   font-weight: 900;
    color: white;
    text-shadow: 2px 2px  magenta;
 }
