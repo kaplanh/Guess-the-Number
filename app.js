@@ -7,10 +7,17 @@ let please = document.querySelector(".please");
 let lifepar = document.querySelector(".life");
 let life = 10;
 
+window.onload = () => {
+  fon.play();
+  input.focus();
+};
+
 const guessGame = function () {
   if (life == 1) {
     if (input.value == random) {
-      paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";
+      please.innerHTML = "";
+      lifepar.innerHTML = "👆👆👆";      
+      paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";      
       check.style.display = "none";
       input.style.display = "none";
       restart.style.display = "block";
@@ -65,8 +72,5 @@ const guessGame = function () {
   });
 
 
-window.onload = () => {
-  fon.play();
-  input.focus();
-};
+
 
