@@ -66,6 +66,7 @@ input.addEventListener("keydown", (e) => {
 });
 
 window.onload = () => {
-  fon.play();
   input.focus();
+  // fon.play();
 };
+
