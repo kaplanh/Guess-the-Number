@@ -70,7 +70,7 @@ h1{
 .input{
 width: 200px;
 height: 70px;
-/* font-size: 3rem; */
+font-size: 70px;
 font-weight: bolder;
 border-radius: 30px;
 border: 2px solid darkgray;
@@ -139,7 +139,6 @@ text-shadow: 2px 2px  magenta;
 @media (max-width:470px){
     h1{
         width: 60%;
-        /* margin-top: 150px; */
         font-size: 1rem;
         line-height: 40px;
     }
