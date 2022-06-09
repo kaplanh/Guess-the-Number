@@ -1,26 +1,21 @@
-let random = Math.floor(Math.random() * 1000 + 1);
+let random = Math.floor(Math.random() * 100 + 1);
 let input = document.querySelector(".input");
 let check = document.querySelector(".check");
 let restart = document.querySelector(".restart");
 let paragraf = document.querySelector(".para");
 let please = document.querySelector(".please");
 let lifepar = document.querySelector(".life");
-let life = 10;
-
-window.onload = () => {
-  fon.play();
-  input.focus();
-};
+let life = 7;
 
 const guessGame = function () {
   if (life == 1) {
     if (input.value == random) {
-      please.innerHTML = "";
-      lifepar.innerHTML = "👆👆👆";      
-      paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";      
+      please.innerHTML = " ";
+      lifepar.innerHTML = " ";
+      paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";
       check.style.display = "none";
       input.style.display = "none";
-      restart.style.display = "block";
+      restart.style.display = "block";      
       // applause.play();
     } else {
       paragraf.innerHTML = "😢 Game Over 😢";
@@ -34,7 +29,7 @@ const guessGame = function () {
       // loser.play();
     }
   } else {
-    if (input.value > 1000 || input.value < 0 || input.value == "") {
+    if (input.value > 100 || input.value < 0 || input.value == "") {
       paragraf.innerText = "Please enter a valid number";
     } else {
       if (input.value > random) {
@@ -48,6 +43,8 @@ const guessGame = function () {
         document.querySelector(".first").innerText = input.value;
         // up.play();
       } else if (input.value == random) {
+        please.innerHTML = " ";
+        lifepar.innerHTML = " ";
         paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";
         check.style.display = "none";
         input.style.display = "none";
@@ -55,22 +52,20 @@ const guessGame = function () {
         // applause.play();
       }
     }
-    
   }
 
   document.querySelector(".life-span").innerHTML = life;
   input.value = "";
-}
-  check.addEventListener("click", guessGame);
+};
+check.addEventListener("click", guessGame);
 
-  input.addEventListener("keydown", (e) => {
+input.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
-   
     guessGame();
   }
+});
 
-  });
-
-
-
-
+window.onload = () => {
+  fon.play();
+  input.focus();
+};
