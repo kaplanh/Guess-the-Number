@@ -88,8 +88,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .check, .restart{
 width: 200px;
-height: 70px;
-line-height: 70px;
+height: 50px;
+line-height: 50px;
 font-size: 50px;
 border-radius: 30px;
 border: 2px solid rgb(169, 169, 169);
