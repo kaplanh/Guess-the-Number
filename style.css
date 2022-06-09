@@ -9,7 +9,7 @@
 
 
 body{
-    height: 70vh;
+    height: 100vh;
     background-image: url(./img/binary-ge8b3a3fe4_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -20,17 +20,17 @@ body{
 
 .container{
 
-    height: 30vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 75px;
+    margin-top: 80px;
 }
 
 .paragraf{
     background-color: aqua;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ body{
 }
 
 h1{
-   width: 100%;
+   width: 47%;
    line-height: 80px;
    background-color: rgba(47, 79, 79, 0.3); 
    text-align: center;
