@@ -15,6 +15,7 @@ const guessGame = function () {
       paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";
       check.style.display = "none";
       input.style.display = "none";
+      startBtn.style.display = "none";
       restart.style.display = "block";
       applause.play();
     } else {
@@ -22,6 +23,7 @@ const guessGame = function () {
       check.style.display = "none";
       input.style.display = "none";
       restart.style.display = "block";
+      startBtn.style.display = "none";
       please.innerHTML = "";
       lifepar.innerHTML = "👆👆👆";
       lifepar.style.textShadow = "none";
@@ -49,6 +51,7 @@ const guessGame = function () {
         check.style.display = "none";
         input.style.display = "none";
         restart.style.display = "block";
+        startBtn.style.display = "none";
         applause.play();
       }
     }
