@@ -86,7 +86,7 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.check, .restart{
+.check, .restart,.start{
 width: 200px;
 height: 50px;
 line-height: 50px;

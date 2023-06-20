@@ -15,8 +15,8 @@ const guessGame = function () {
       paragraf.innerHTML = "👏 CONGRATULATIONS! 👏";
       check.style.display = "none";
       input.style.display = "none";
-      restart.style.display = "block";      
-      // applause.play();
+      restart.style.display = "block";
+      applause.play();
     } else {
       paragraf.innerHTML = "😢 Game Over 😢";
       check.style.display = "none";
@@ -26,7 +26,7 @@ const guessGame = function () {
       lifepar.innerHTML = "👆👆👆";
       lifepar.style.textShadow = "none";
       life--;
-      // loser.play();
+      loser.play();
     }
   } else {
     if (input.value > 100 || input.value < 0 || input.value == "") {
@@ -36,12 +36,12 @@ const guessGame = function () {
         paragraf.innerHTML = "Lower number please";
         life--;
         document.querySelector(".last").innerText = input.value;
-        // down.play();
+        down.play();
       } else if (input.value < random) {
         paragraf.innerHTML = "Greater number please";
         life--;
         document.querySelector(".first").innerText = input.value;
-        // up.play();
+        up.play();
       } else if (input.value == random) {
         please.innerHTML = " ";
         lifepar.innerHTML = " ";
@@ -49,7 +49,7 @@ const guessGame = function () {
         check.style.display = "none";
         input.style.display = "none";
         restart.style.display = "block";
-        // applause.play();
+        applause.play();
       }
     }
   }
@@ -65,8 +65,12 @@ input.addEventListener("keydown", (e) => {
   }
 });
 
-window.onload = () => {
+const startBtn = document.querySelector(".start");
+startBtn.addEventListener("click", () => {
+  fon.play();
   input.focus();
-  // fon.play();
-};
+});
 
+// window.onload = () => {
+//   input.focus();
+// };
