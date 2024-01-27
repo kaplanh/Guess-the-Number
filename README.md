@@ -1,4 +1,4 @@
-# Guess-the-Number with JS
+# Guess the Number with JS
 
 [Click me!]( https://kaplanh.github.io/Guess-the-Number/)
 
