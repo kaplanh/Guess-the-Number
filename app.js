@@ -1,5 +1,5 @@
-// let random = Math.floor(Math.random() * 100 + 1);
-let random = 10;
+// let random = 10;
+let random = Math.floor(Math.random() * 100 + 1);
 let input = document.querySelector(".input");
 let check = document.querySelector(".check");
 let restart = document.querySelector(".restart");
@@ -15,6 +15,7 @@ const up = document.querySelector("#up");
 const fon = document.querySelector("#fon");
 
 const startBtn = document.querySelector(".start");
+
 const guessGame = function () {
     if (life == 1) {
         if (input.value == random) {
@@ -92,6 +93,9 @@ input.addEventListener("keydown", (e) => {
     //   guessGame();
     // }
 });
+// window.addEventListener("load", (e) => {
+//     fon.play();
+// });
 
 startBtn.addEventListener("click", () => {
     fon.play();
