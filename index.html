@@ -15,47 +15,39 @@
 
     <body>
         <main class="container">
+            <!-- !startSection -->
 
-          <!-- !startSection -->
-           
-                <h1 class="h1">Guess the Number</h1>
-                <p class="please">
-                    Please enter a number between <span class="first">1</span> -
-                    <span class="last">100</span>
-                </p>
-                <p class="para">Are you ready...</p>
-                <button class="btn btn-warning start">Start</button>
-                <input
-                    type="number"
-                    name="guess"
-                    id="guess"
-                    class="input p-2"
-                    autofocus
-                />
-                <button type="submit" class="submit btn btn-warning check">
-                    Check
-                </button>
+            <h1 class="h1">Guess the Number</h1>
+            <p class="please">
+                Please enter a number between <span class="first">1</span> -
+                <span class="last">100</span>
+            </p>
+            <p class="para">Are you ready...</p>
+            <button class="start">Start</button>
+            <input
+                type="number"
+                name="guess"
+                id="guess"
+                class="input p-2"
+                autofocus
+            />
+            <button type="submit" class="check">Check</button>
 
-                
-                
-                <!-- !restartSection -->
-            
-                <button
-                    type="submit"
-                    class="submit btn btn-dark restart"
-                    style="display: none"
-                    onclick="window.location.reload(false)"
-                >
-                    Restart
-                </button>
-                <p class="life">
-                    You have <span class="life-span">7</span> chance
-                </p>
-         
+            <!-- !restartSection -->
+
+            <button
+                type="submit"
+                class="restart"
+                style="display: none"
+                onclick="window.location.reload(false)"
+            >
+                Restart
+            </button>
+            <p class="life">You have <span class="life-span">7</span> chance</p>
         </main>
 
         <audio
-        id="fon"
+            id="fon"
             autoplay
             src="./voices/sadness-in-roads-to-nowhere-23407.mp3"
         ></audio>
@@ -73,7 +65,7 @@
             id="down"
             src="./voices/mixkit-guitar-stroke-down-slow-2339.wav"
         ></audio>
-        
+
         <script src="app.js"></script>
     </body>
 </html>
