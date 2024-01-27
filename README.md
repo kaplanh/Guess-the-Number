@@ -30,13 +30,16 @@ Guess-the-Number (folder)
 ### At the end of the project, following topics are to be covered;
 
 - HTML
- - <audio  autoplay src="./voices/sadness-in-roads-to-nowhere-23407.mp3"> </audio>
- - <button onclick="window.location.reload(false)">Restart</button>
- -  <input type="number" autofocus />
+   ```
+   - <audio  autoplay src="./voices/sadness-in-roads-to-nowhere-23407.mp3"> </audio>
+   - <button onclick="window.location.reload(false)">Restart</button>
+   -  <input type="number" autofocus />
+   ```
+ 
 - CSS
 
   - flexbox
-  - @media querys
+  - @media queries
   - -Nexted Css
     ```
     
