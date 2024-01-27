@@ -1,25 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
-body{
+body {
     height: 100vh;
     background-image: url(./img/binary-ge8b3a3fe4_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 
-.container{
-
+.container {
     height: 35vh;
     display: flex;
     justify-content: center;
@@ -28,7 +23,7 @@ body{
     margin-top: 80px;
 }
 
-.paragraf{
+.paragraf {
     background-color: aqua;
     height: 35vh;
     display: flex;
@@ -38,47 +33,50 @@ body{
     background-color: rgba(47, 79, 79, 0.74);
 }
 
-h1{
-   width: 47%;
-   line-height: 70px;
-   background-color: rgba(47, 79, 79, 0.3); 
-   text-align: center;
-   margin: 150px 0 20px;
-   border-radius:50px;
-   font-family: 'Rajdhani', sans-serif;
-   font-size: 5rem;
-   font-weight: 900;
-   color: white;
-   text-shadow: 2px 2px  magenta;
+h1 {
+    width: 47%;
+    line-height: 70px;
+    background-color: rgba(47, 79, 79, 0.3);
+    text-align: center;
+    margin: 150px 0 20px;
+    border-radius: 50px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px magenta;
 }
 
-.please, .para, .life{
-    font-family: 'Rajdhani', sans-serif;
+.please,
+.para,
+.life {
+    font-family: "Rajdhani", sans-serif;
     font-size: 3rem;
     margin-bottom: 20px;
-    color:white;
-    text-shadow: 2px 2px  magenta;
-
+    color: white;
+    text-shadow: 2px 2px magenta;
 }
 
-.first, .last, .life-span{
-    color:yellow;
+.first,
+.last,
+.life-span {
+    color: yellow;
     font-weight: 900;
-    text-shadow: 2px 2px ;
+    text-shadow: 2px 2px;
 }
 
-.input{
-width: 200px;
-height: 60px;
-font-size: 60px;
-font-weight: bolder;
-border-radius: 30px;
-border: 2px solid darkgray;
-margin-bottom: 10px;
-text-align: center;
-line-height: 70px;
-color:yellow;
-background-color: rgba(47, 79, 79, 0.74);
+.input {
+    width: 200px;
+    height: 60px;
+    font-size: 60px;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: 2px solid darkgray;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 70px;
+    color: yellow;
+    background-color: rgba(47, 79, 79, 0.74);
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -86,79 +84,88 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.check, .restart,.start{
-width: 200px;
-height: 50px;
-line-height: 50px;
-font-size: 50px;
-border-radius: 30px;
-border: 2px solid rgb(169, 169, 169);
-cursor: pointer;
-font-family: 'Rajdhani', sans-serif;
-margin-bottom: 10px;
-color: white;
-background-color: rgba(47, 79, 79, 0.1);
-text-shadow: 2px 2px  magenta;
+.check,
+.restart,
+.start {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+    border-radius: 30px;
+    border: 2px solid rgb(169, 169, 169);
+    cursor: pointer;
+    font-family: "Rajdhani", sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgba(47, 79, 79, 0.1);
+    text-shadow: 2px 2px magenta;
 }
 
-.check:active, .restart:active{
+.check:active,
+.restart:active {
     font-size: 33px;
 }
 
-.over, .fire{
+.over,
+.fire {
     display: none;
 }
 
-
-@media (max-width:900px){
-    h1{
+@media (max-width: 900px) {
+    h1 {
         width: 67%;
         font-size: 2rem;
     }
-    .please, .para, .life{      
-        font-size: 2rem;  
+    .please,
+    .para,
+    .life {
+        font-size: 2rem;
     }
 
-    .input{
+    .input {
         width: 105px;
         height: 40px;
         font-size: 30px;
-        }
-    .check, .restart{
+    }
+    .check,
+    .restart {
         width: 100px;
         line-height: 35px;
         font-size: 20px;
-
     }
-    .check:active, .restart:active{
+    .check:active,
+    .restart:active {
         font-size: 23px;
     }
 }
 
-@media (max-width:470px){
-    h1{
+@media (max-width: 470px) {
+    h1 {
         width: 60%;
         font-size: 1rem;
         line-height: 40px;
     }
-    .please, .para, .life{      
-        font-size: 1rem;  
+    .please,
+    .para,
+    .life {
+        font-size: 1rem;
     }
 
-    .input{
+    .input {
         width: 70px;
         height: 30px;
         font-size: 20px;
         border-radius: 5px;
-        }
-    .check, .restart{
+    }
+    .check,
+    .restart {
         width: 70px;
         line-height: 27px;
         font-size: 20px;
         border-radius: 5px;
-
     }
-    .check:active, .restart:active{
+    .check:active,
+    .restart:active {
         font-size: 13px;
     }
 }

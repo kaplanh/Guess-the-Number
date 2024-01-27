@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess Number Game</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="./img/2022-06-08_17-14.png"
-      type="image/x-icon"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess Number Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/2022-06-08_17-14.png"
+            type="image/x-icon"
+        />
+    </head>
 
-  <body>
-    <div class="container">
-      <h1 class="h1">Guess the Number</h1>
-      <p class="please">
-        Please enter a number between <span class="first">1</span> -
-        <span class="last">100</span>
-      </p>
-      <p class="para">Are you ready...</p>
-      <button class="btn btn-warning start">Start</button>
-      <input type="number" name="guess" id="" class="input p-2" autofocus />
-      <button type="submit" class="submit btn btn-warning check">Check</button>
-      <button
-        type="submit"
-        class="submit btn btn-dark restart"
-        style="display: none"
-        onclick="window.location.reload(false)"
-      >
-        Restart
-      </button>
-      <p class="life">You have <span class="life-span">7</span> chance</p>
-    </div>
+    <body>
+        <main class="container">
 
-    <audio
-      autoplay
-      src="./voices/sadness-in-roads-to-nowhere-23407.mp3"
-    ></audio>
-    <audio id="applause" src="./voices/alkis-sesi.mp3"></audio>
-    <audio id="loser" src="./voices/mixkit-game-over-trombone-1940.wav"></audio>
-    <audio id="up" src="./voices/mixkit-guitar-stroke-up-slow-2338.wav"></audio>
-    <audio
-      id="down"
-      src="./voices/mixkit-guitar-stroke-down-slow-2339.wav"
-    ></audio>
-    <audio
-      id="fon"
-      src="./voices/sadness-in-roads-to-nowhere-23407.mp3"
-    ></audio>
-    <script src="app.js"></script>
-  </body>
+          <!-- !startSection -->
+           
+                <h1 class="h1">Guess the Number</h1>
+                <p class="please">
+                    Please enter a number between <span class="first">1</span> -
+                    <span class="last">100</span>
+                </p>
+                <p class="para">Are you ready...</p>
+                <button class="btn btn-warning start">Start</button>
+                <input
+                    type="number"
+                    name="guess"
+                    id="guess"
+                    class="input p-2"
+                    autofocus
+                />
+                <button type="submit" class="submit btn btn-warning check">
+                    Check
+                </button>
+
+                
+                
+                <!-- !restartSection -->
+            
+                <button
+                    type="submit"
+                    class="submit btn btn-dark restart"
+                    style="display: none"
+                    onclick="window.location.reload(false)"
+                >
+                    Restart
+                </button>
+                <p class="life">
+                    You have <span class="life-span">7</span> chance
+                </p>
+         
+        </main>
+
+        <audio
+            autoplay
+            src="./voices/sadness-in-roads-to-nowhere-23407.mp3"
+        ></audio>
+        <audio id="applause" src="./voices/alkis-sesi.mp3"></audio>
+        <audio
+            id="loser"
+            src="./voices/mixkit-game-over-trombone-1940.wav"
+        ></audio>
+        <audio
+            id="up"
+            src="./voices/mixkit-guitar-stroke-up-slow-2338.wav"
+        ></audio>
+        <audio
+            id="down"
+            src="./voices/mixkit-guitar-stroke-down-slow-2339.wav"
+        ></audio>
+        <audio
+            id="fon"
+            src="./voices/sadness-in-roads-to-nowhere-23407.mp3"
+        ></audio>
+        <script src="app.js"></script>
+    </body>
 </html>
