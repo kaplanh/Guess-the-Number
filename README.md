@@ -6,42 +6,56 @@
 
 ## Description
 
-The project aims to create a Rock Paper Scissor Game using JS.
+The project aims to create a Guess the Number Game using JS.
 
 ## Problem Statement
 
-- Your company has recently started on a project that aims to create a  Rock Paper Scissor Game. So you and your colleagues have started to work on the project.
+- Your company has recently started on a project that aims to create a Guess the Number Game. So you and your colleagues have started to work on the project.
 
 ## Project Skeleton 
 
 ```
-Rock-Paper-Scissor (folder)
+Guess-the-Number (folder)
 |
 |----readme.md                        
 |----index.html  
-|----index.css
+|----style.css
 |----app.js
-|----assets (folder)
+|----img (folder)
+|----voices (folder)
 
 ``` 
 
 
 ### At the end of the project, following topics are to be covered;
 
-- HTML 
+- HTML
+ - <audio  autoplay src="./voices/sadness-in-roads-to-nowhere-23407.mp3"> </audio>
+ - <button onclick="window.location.reload(false)">Restart</button>
+ -  <input type="number" autofocus />
 - CSS
+
   - flexbox
+  - @media querys
+  - -Nexted Css
+    ```
+    
+    h1:{
+     transition: scale 1.02s;
+     &:hover{
+       scale: 1.2;
+           }
+    }
+    ```
 
 - JS
   - DOM Manipulations
   - DOM Selectors
   - Events
-  - Capturing & Bubling (https://www.w3schools.com/js/js_htmldom_eventlistener.asp or https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
   - addEventListener("event",(event)=>{})
-  - Functions(Math.floor(Math.random() * 3))
+  - Functions(Math.floor(Math.random() * 100 + 1) //1 <= x < 100 )
   - if else - if - else conditions
-  - Ternary
-  - LocalStorage
+  - Logical operators && and ||
 
 
 ### At the end of the project, developers will be able to;
